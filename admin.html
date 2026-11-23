@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>รายการสั่งซื้อ | Body Scent</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-specific tweaks for admin.html */
+    .page-title {
+      font-size: var(--fs-xl);
+    }
+    .page-head {
+      padding: var(--space-6) 0 var(--space-4);
+    }
+    .table-wrap {
+      overflow-x: auto;
+      background: var(--white);
+      border: 1px solid var(--line-soft);
+      border-radius: var(--radius);
+    }
+    #ordersTable {
+      width: 100%;
+      min-width: 820px;
+      border-collapse: collapse;
+      font-size: var(--fs-sm);
+    }
+    #ordersTable th,
+    #ordersTable td {
+      padding: 1rem 1.25rem;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line-soft);
+      line-height: 1.7;
+    }
+    #ordersTable thead th {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+      color: var(--ink);
+      background: var(--cream);
+      border-bottom: 1px solid var(--line);
+    }
+    #ordersTable tbody tr:last-child td {
+      border-bottom: 0;
+    }
+    #ordersTable tbody tr:hover td {
+      background: var(--cream);
+    }
+    #ordersTable td:nth-child(1) {
+      white-space: nowrap;
+    }
+    #ordersTable th:nth-child(5),
+    #ordersTable td:nth-child(5) {
+      text-align: right;
+      white-space: nowrap;
+    }
+    @media (max-width: 640px) {
+      .page-head {
+        padding: var(--space-5) 0 var(--space-3);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html">Body Scent</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-head">
+      <div class="container">
+        <h1 class="page-title">รายการสั่งซื้อ</h1>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="lead">รายการล่าสุดจะแสดงอยู่ด้านบน</p>
+      </div>
+    </section>
+
+    <section class="section section--white" style="padding-top: var(--space-5);">
+      <div class="container">
+        <div class="table-wrap">
+          <table id="ordersTable">
+            <thead>
+              <tr>
+                <th scope="col">วันเวลา</th>
+                <th scope="col">ชื่อลูกค้า</th>
+                <th scope="col">เบอร์โทร/Line</th>
+                <th scope="col">รายการสินค้า</th>
+                <th scope="col">จำนวนเงินรวม</th>
+                <th scope="col">หมายเหตุ</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

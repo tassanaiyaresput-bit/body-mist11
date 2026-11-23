@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ขอบคุณสำหรับการสั่งซื้อ | Body Scent</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-specific tweaks for thankyou.html */
+    .thanks {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 81px);
+      min-height: calc(100svh - 81px);
+      padding: var(--space-6) 0;
+      text-align: center;
+    }
+    .thanks h1 {
+      font-size: var(--fs-xl);
+    }
+    .thanks p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .thanks .rule {
+      margin: var(--space-3) auto;
+    }
+    .thanks .btn {
+      margin-top: var(--space-3);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html">Body Scent</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container container--narrow">
+      <div class="thanks">
+        <h1>ขอบคุณสำหรับการสั่งซื้อ</h1>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="lead">เราได้รับคำสั่งซื้อของคุณเรียบร้อยแล้ว</p>
+        <a class="btn" href="index.html">กลับหน้าแรก</a>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

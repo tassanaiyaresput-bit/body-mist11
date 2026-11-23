@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สินค้าทั้งหมด | Body Scent</title>
+  <meta name="description" content="น้ำหอมฉีดตัวขนาด 30ml และ 100ml และโรลออน จาก Body Scent เลือกกรองตามอารมณ์ Fresh, Sweet, Confident, Romance">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-specific tweaks for product.html */
+    .page-title {
+      font-size: var(--fs-xl);
+    }
+    .page-head {
+      padding: var(--space-6) 0 var(--space-5);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html">Body Scent</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html" aria-current="page">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-head">
+      <div class="container">
+        <h1 class="page-title">สินค้าทั้งหมด</h1>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="lead">เลือกกลิ่นที่ตรงกับอารมณ์ของคุณ มีทั้งน้ำหอมฉีดตัวขนาด 30ml และ 100ml รวมถึงโรลออน</p>
+      </div>
+    </section>
+
+    <section class="section section--white" style="padding-top: var(--space-5);">
+      <div class="container">
+        <!-- script.js builds the filter buttons here -->
+        <div id="filter-bar" class="filter" role="group" aria-label="กรองสินค้าตามอารมณ์"></div>
+
+        <!-- script.js renders the product cards here -->
+        <div id="product-list" class="product-grid" aria-live="polite"></div>
+
+        <noscript>
+          <p class="small">กรุณาเปิดใช้งาน JavaScript เพื่อดูรายการสินค้า</p>
+        </noscript>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a class="logo" href="index.html">Body Scent</a>
+          <p class="mt-2">กลิ่นหอมที่สะท้อนตัวตนและอารมณ์ในทุกวัน</p>
+        </div>
+        <div>
+          <h4>เมนู</h4>
+          <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="product.html">สินค้าทั้งหมด</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">&copy; 2026 Body Scent</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
